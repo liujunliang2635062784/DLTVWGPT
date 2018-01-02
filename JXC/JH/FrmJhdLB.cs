@@ -59,7 +59,7 @@ namespace JXC.JH
         private void createTableAndRelation()
         {
             string cmd;
-            cmd = "SELECT jhdid, sum(sl*dj) AS hj FROM tjhmx GROUP BY jhdid ORDER BY jhdid";
+            cmd = "SELECT id AS jhdid, hj FROM vjhdhj ORDER BY jhdid";
             dtJhdHj = ClsMSSQL.GetDataTable(cmd, ClsDBCon.ConStrJxc);
             dtJhdHj.TableName = "vjhdhj";
             dsJxc.Tables.Add(dtJhdHj);

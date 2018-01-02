@@ -135,6 +135,44 @@ SELECT id, jhdid, xh, pm, bm, dw, dj, sl FROM tjhmx WHERE (id = @id)</CommandTex
               </DbSource>
             </Sources>
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vjhdhjTableAdapter" GeneratorDataComponentClassName="vjhdhjTableAdapter" Name="vjhdhj" UserDataComponentName="vjhdhjTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="jxcConnectionString (Web.config)" DbObjectName="jxc.dbo.vjhdhj" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, jhdh, ghsh, lxr, lxdh, hj FROM dbo.vjhdhj</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="jhdh" DataSetColumn="jhdh" />
+              <Mapping SourceColumn="ghsh" DataSetColumn="ghsh" />
+              <Mapping SourceColumn="lxr" DataSetColumn="lxr" />
+              <Mapping SourceColumn="lxdh" DataSetColumn="lxdh" />
+              <Mapping SourceColumn="hj" DataSetColumn="hj" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vjhmxhjTableAdapter" GeneratorDataComponentClassName="vjhmxhjTableAdapter" Name="vjhmxhj" UserDataComponentName="vjhmxhjTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="jxcConnectionString (Web.config)" DbObjectName="jxc.dbo.vjhmxhj" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT jhdid, hj FROM dbo.vjhmxhj</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="jhdid" DataSetColumn="jhdid" />
+              <Mapping SourceColumn="hj" DataSetColumn="hj" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -143,7 +181,7 @@ SELECT id, jhdid, xh, pm, bm, dw, dj, sl FROM tjhmx WHERE (id = @id)</CommandTex
   <xs:element name="DSJxc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSJxc" msprop:Generator_UserDSName="DSJxc">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tjhd" msprop:Generator_TableClassName="tjhdDataTable" msprop:Generator_TableVarName="tabletjhd" msprop:Generator_RowChangedName="tjhdRowChanged" msprop:Generator_TablePropName="tjhd" msprop:Generator_RowDeletingName="tjhdRowDeleting" msprop:Generator_RowChangingName="tjhdRowChanging" msprop:Generator_RowEvHandlerName="tjhdRowChangeEventHandler" msprop:Generator_RowDeletedName="tjhdRowDeleted" msprop:Generator_RowClassName="tjhdRow" msprop:Generator_UserTableName="tjhd" msprop:Generator_RowEvArgName="tjhdRowChangeEvent">
+        <xs:element name="tjhd" msprop:Generator_TableClassName="tjhdDataTable" msprop:Generator_TableVarName="tabletjhd" msprop:Generator_TablePropName="tjhd" msprop:Generator_RowDeletingName="tjhdRowDeleting" msprop:Generator_RowChangingName="tjhdRowChanging" msprop:Generator_RowEvHandlerName="tjhdRowChangeEventHandler" msprop:Generator_RowDeletedName="tjhdRowDeleted" msprop:Generator_UserTableName="tjhd" msprop:Generator_RowChangedName="tjhdRowChanged" msprop:Generator_RowEvArgName="tjhdRowChangeEvent" msprop:Generator_RowClassName="tjhdRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -180,7 +218,7 @@ SELECT id, jhdid, xh, pm, bm, dw, dj, sl FROM tjhmx WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tjhmx" msprop:Generator_TableClassName="tjhmxDataTable" msprop:Generator_TableVarName="tabletjhmx" msprop:Generator_RowChangedName="tjhmxRowChanged" msprop:Generator_TablePropName="tjhmx" msprop:Generator_RowDeletingName="tjhmxRowDeleting" msprop:Generator_RowChangingName="tjhmxRowChanging" msprop:Generator_RowEvHandlerName="tjhmxRowChangeEventHandler" msprop:Generator_RowDeletedName="tjhmxRowDeleted" msprop:Generator_RowClassName="tjhmxRow" msprop:Generator_UserTableName="tjhmx" msprop:Generator_RowEvArgName="tjhmxRowChangeEvent">
+        <xs:element name="tjhmx" msprop:Generator_TableClassName="tjhmxDataTable" msprop:Generator_TableVarName="tabletjhmx" msprop:Generator_TablePropName="tjhmx" msprop:Generator_RowDeletingName="tjhmxRowDeleting" msprop:Generator_RowChangingName="tjhmxRowChanging" msprop:Generator_RowEvHandlerName="tjhmxRowChangeEventHandler" msprop:Generator_RowDeletedName="tjhmxRowDeleted" msprop:Generator_UserTableName="tjhmx" msprop:Generator_RowChangedName="tjhmxRowChanged" msprop:Generator_RowEvArgName="tjhmxRowChangeEvent" msprop:Generator_RowClassName="tjhmxRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -213,6 +251,50 @@ SELECT id, jhdid, xh, pm, bm, dw, dj, sl FROM tjhmx WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="vjhdhj" msprop:Generator_TableClassName="vjhdhjDataTable" msprop:Generator_TableVarName="tablevjhdhj" msprop:Generator_TablePropName="vjhdhj" msprop:Generator_RowDeletingName="vjhdhjRowDeleting" msprop:Generator_RowChangingName="vjhdhjRowChanging" msprop:Generator_RowEvHandlerName="vjhdhjRowChangeEventHandler" msprop:Generator_RowDeletedName="vjhdhjRowDeleted" msprop:Generator_UserTableName="vjhdhj" msprop:Generator_RowChangedName="vjhdhjRowChanged" msprop:Generator_RowEvArgName="vjhdhjRowChangeEvent" msprop:Generator_RowClassName="vjhdhjRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="jhdh" msprop:Generator_ColumnVarNameInTable="columnjhdh" msprop:Generator_ColumnPropNameInRow="jhdh" msprop:Generator_ColumnPropNameInTable="jhdhColumn" msprop:Generator_UserColumnName="jhdh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ghsh" msprop:Generator_ColumnVarNameInTable="columnghsh" msprop:Generator_ColumnPropNameInRow="ghsh" msprop:Generator_ColumnPropNameInTable="ghshColumn" msprop:Generator_UserColumnName="ghsh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lxr" msprop:Generator_ColumnVarNameInTable="columnlxr" msprop:Generator_ColumnPropNameInRow="lxr" msprop:Generator_ColumnPropNameInTable="lxrColumn" msprop:Generator_UserColumnName="lxr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lxdh" msprop:Generator_ColumnVarNameInTable="columnlxdh" msprop:Generator_ColumnPropNameInRow="lxdh" msprop:Generator_ColumnPropNameInTable="lxdhColumn" msprop:Generator_UserColumnName="lxdh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hj" msprop:Generator_ColumnVarNameInTable="columnhj" msprop:Generator_ColumnPropNameInRow="hj" msprop:Generator_ColumnPropNameInTable="hjColumn" msprop:Generator_UserColumnName="hj" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vjhmxhj" msprop:Generator_TableClassName="vjhmxhjDataTable" msprop:Generator_TableVarName="tablevjhmxhj" msprop:Generator_TablePropName="vjhmxhj" msprop:Generator_RowDeletingName="vjhmxhjRowDeleting" msprop:Generator_RowChangingName="vjhmxhjRowChanging" msprop:Generator_RowEvHandlerName="vjhmxhjRowChangeEventHandler" msprop:Generator_RowDeletedName="vjhmxhjRowDeleted" msprop:Generator_UserTableName="vjhmxhj" msprop:Generator_RowChangedName="vjhmxhjRowChanged" msprop:Generator_RowEvArgName="vjhmxhjRowChangeEvent" msprop:Generator_RowClassName="vjhmxhjRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jhdid" msprop:Generator_ColumnVarNameInTable="columnjhdid" msprop:Generator_ColumnPropNameInRow="jhdid" msprop:Generator_ColumnPropNameInTable="jhdidColumn" msprop:Generator_UserColumnName="jhdid" type="xs:int" />
+              <xs:element name="hj" msprop:Generator_ColumnVarNameInTable="columnhj" msprop:Generator_ColumnPropNameInRow="hj" msprop:Generator_ColumnPropNameInTable="hjColumn" msprop:Generator_UserColumnName="hj" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -223,7 +305,11 @@ SELECT id, jhdid, xh, pm, bm, dw, dj, sl FROM tjhmx WHERE (id = @id)</CommandTex
       <xs:selector xpath=".//mstns:tjhmx" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:keyref name="FK_tjhmx_tjhd" refer="Constraint1" msprop:rel_Generator_UserChildTable="tjhmx" msprop:rel_Generator_ChildPropName="GettjhmxRows" msprop:rel_Generator_UserRelationName="FK_tjhmx_tjhd" msprop:rel_Generator_RelationVarName="relationFK_tjhmx_tjhd" msprop:rel_Generator_UserParentTable="tjhd" msprop:rel_Generator_ParentPropName="tjhdRow" msdata:DeleteRule="None">
+    <xs:unique name="vjhdhj_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vjhdhj" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:keyref name="FK_tjhmx_tjhd" refer="Constraint1" msprop:rel_Generator_UserChildTable="tjhmx" msprop:rel_Generator_ChildPropName="GettjhmxRows" msprop:rel_Generator_UserRelationName="FK_tjhmx_tjhd" msprop:rel_Generator_ParentPropName="tjhdRow" msprop:rel_Generator_RelationVarName="relationFK_tjhmx_tjhd" msprop:rel_Generator_UserParentTable="tjhd" msdata:DeleteRule="None">
       <xs:selector xpath=".//mstns:tjhmx" />
       <xs:field xpath="mstns:jhdid" />
     </xs:keyref>

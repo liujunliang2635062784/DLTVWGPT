@@ -116,8 +116,8 @@ namespace JXC.JH
             {
                 bds.EndEdit();
                 tableAdapterManager1.UpdateAll(dsJxc1);
-                DataTable dt = dsJxc.Tables["vjhdhj"];
-                DataRow[] r = dt.Select(string.Format("jhdid={0}", lblId.Text));
+                DataTable dt = dsJxc.Tables["vjhmxhj"];
+                DataRow[] r = dt.Select(string.Format("jhdId={0}", lblId.Text));
                 if (r.Length > 0)
                     r[0]["hj"] = string.IsNullOrEmpty(lblHj.Text) ? "0" : lblHj.Text;
                 if (NED == EnumNED.NEW)
